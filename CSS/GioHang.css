@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+table img { 
+    width: 100px;
+    height: 100px;
+}
+
+.phanthan {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.bangluutrugiohang {
+    text-align: center;
+}
+
+.item-dongia--giaban {
+    font-weight: bold ;
+    color: red;
+}
+
+table, td,tr,th {
+    margin: auto;
+
+    border:  1px solid #ccc;
+}
+
+/* Hết phanthan */

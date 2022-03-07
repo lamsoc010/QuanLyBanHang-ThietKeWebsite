@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/Nu.css">
+    <title>Trẻ Em</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="container">
+                      <a class="navbar-brand" href="#"><img class="logo" src="images/logoheader.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                       </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <div class="container ">
+                              <div class="row ">
+                                  <div class="col-md-12 ">
+                                      <ul class="navbar-nav menuheader">
+                                          <li class="nav-item">
+                                          <a class="nav-link " aria-current="page" href="TrangChu.html">TRANG CHỦ</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link " href="GioiThieu.html">GIỚI THIỆU</a>
+                                          </li>
+                                          <li class="nav-item dropdown">
+                                          <a class="nav-link active" href="SanPham.html" >
+                                              SẢN PHẨM
+                                          </a>
+                                          <ul class="dropdown-menu dropdown-content" >
+                                              <li><a class="dropdown-item" href="Nam.html">NAM</a></li>
+                                              <li><a class="dropdown-item" href="Nu.html">NỮ</a></li>
+                                              <li><a class="dropdown-item" href="TreEm.html">TRẺ EM</a></li>
+                                          </ul>
+                                          </li>
+                                          <li class="nav-item ">
+                                          <a class="nav-link" href="PhuKienKhac.html">
+                                              PHỤ KIỆN KHÁC
+                                          </a>
+                                              
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" href="TinTuc.html"> TIN TỨC</a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link " href="LienHe.html" >LIÊN HỆ</a>
+                                          </li>
+  
+                                          <li class="nav-item dangnhap">
+                                              <!-- Button trigger modal -->
+                                              <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                  Đăng Nhập/ Đăng Ký
+                                                </a>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                                    <div class="modal-content">
+                                                      <div class="modal-body">
+                                                          <div class="container">
+                                                              <div class="row">
+                                                                  <div class="col-md-6 col-6">
+                                                                      <h2>ĐĂNG NHẬP</h2>
+                                                                      <p class="mt-3 mb-0">Tên tài khoản hoặc địa chỉ email *</p>
+                                                                      <input type="text" name="text" id="text" class="w-100">
+                                                                      <p class="mt-3 mb-0">Mật khẩu *</p>
+                                                                      <input type="password" name="text" id="text" class="w-100">
+                                                                      <div class="mt-3">
+                                                                          <button type="button" class="btn btn-danger">ĐĂNG NHẬP</button>
+                                                                          <input type="checkbox" name="" id="">
+                                                                          <small>Ghi nhớ mật khẩu</small>
+                                                                      </div>
+                                                                      <a href="LienHe.html">Quên Mật Khẩu?</a>
+                                                                  </div>
+                                                                  <!-- Hết một cột -->
+                                                                  <div class="col-md-6 col-6">
+                                                                      <h2>ĐĂNG KÝ</h2>
+                                                                      <p class="mt-3 mb-0">Email *</p>
+                                                                      <input type="text" name="text" id="text" class="w-100">
+                                                                      <p class="mt-3 mb-0">Mật khẩu *</p>
+                                                                      <input type="password" name="text" id="text" class="w-100">
+                                                                      <div class="mt-3">
+                                                                          <button type="button" class="btn btn-danger">ĐĂNG KÝ</button>
+                                                                      </div>
+                                                                  </div>
+                                                                  <!-- Hết một cột -->
+                                                              </div>
+                                                              <!-- hết row -->
+                                                          </div>
+                                                          <!-- Hết container -->
+                                                      </div>
+                                                      <!-- Hết modal--body -->
+  
+                                                      <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                      </div>
+                                                      <!-- Hết moddal-footer -->
+                                                    </div>
+                                                    <!-- Hết moddl-content -->
+                                                  </div>
+                                                </div>
+                                                <script type="text/javascript">
+                                                //modal auto load
+                                                  $(window).on('load', function() {
+                                                  //   $('#exampleModal').modal('show');
+                                                  });
+                                                </script>
+                                          </li>
+  
+                                          <li class="nav-item">
+                                              <a class="nav-link " href="GioHang.html" ><i class="bi bi-cart4"></i>GIỎ HÀNG</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      
+                      </div>
+         
+            </div>
+            <!-- end div container -->
+          </nav> 
+
+    </div> 
+    <!-- endheader -->
+    <div class="bannertren">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active slide1">
+              <img src="images/banner1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h1>MONA SNE<i class="bi bi-star"></i>KER</h1>
+                            </div>
+                            <div class="col-md-4 offset-md-3">
+                                <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh. </p>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <!-- het carousel-caption -->
+
+            </div>
+            <!-- het 1 slide -->
+
+            <div class="carousel-item slide2">
+              <img src="images/banner2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption ">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>MONA SNE<i class="bi bi-star"></i>KER</h1>
+                            <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh. </p>
+                        </div>
+                  
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item slide3">
+              <img src="images/banner3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption ">
+                <div class="row">
+                    <div class="col-md-5 offset-md-7">
+                        <h1>MONA SNE<i class="bi bi-star"></i>KER</h1>
+                        <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh. </p>
+                    </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- het inner -->
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- het carousel -->
+    </div>
+
+    <!-- hetbanner tren -->
+
+    <div class="phanthannu">
+        <div class="container">
+            <div class="row rowtren">
+                <div class="col-md-3">
+                    <p><a href="TrangChu.html"> TRANG CHỦ / </a><b>TRẺ EM</b></p> 
+                </div>
+                <div class="col-md-3 offset-md-3">
+                    <p>Hiển thị 1 - 12 trong 22 kết quả </p>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Thứ tự mặc định</option>
+                      <option value="1">Thứ tự theo mức độ phổ biến</option>
+                      <option value="2">Thứ tự theo điểm đánh giá</option>
+                      <option value="3">Mới nhất</option>
+                      <option value="4">Thứ tự theo giá: Thấp đến cao</option>
+                      <option value="5">Thứ tự theo giá: Cao đến thấp</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Hết rowtren -->
+            <div class="row rowduoi">
+                <div class="col-md-3 duoitrai">
+                    <h2>Sản Phẩm</h2>
+                    <div class="container sanpham">
+                        <div class="row rowsanpham">
+                            <div class="col-md-4 cottraisanpham">
+                                <a href=""><img src="images/nu1.jpg" alt=""></a>
+                            </div>
+                            <!-- Hết cột trái -->
+                            <div class="col-md-8 cotphaisanpham">
+                                <a href=""><p>Chuck 70 Psy- Kicks Ox</p></a>
+                                <p><b>1.650.000 đ</b></p>
+                            </div>
+                            <!-- Hết cột phải -->
+                        </div>
+                        <!-- Hết row -->
+                        <div class="row rowsanpham">
+                            <div class="col-md-4 cottraisanpham">
+                                <a href=""><img src="images/nu21.jpg" alt=""></a>
+                            </div>
+                            <!-- Hết cột trái -->
+                            <div class="col-md-8 cotphaisanpham">
+                                <a href=""><p>One Star Sunbaked</p></a>
+                                <p><b>1.650.000 đ</b></p>
+                            </div>
+                            <!-- Hết cột phải -->
+                        </div>
+                        <!-- Hết row -->
+                        <div class="row rowsanpham">
+                            <div class="col-md-4 cottraisanpham">
+                                <a href=""><img src="images/nu31.jpg" alt=""></a>
+                            </div>
+                            <!-- Hết cột trái -->
+                            <div class="col-md-8 cotphaisanpham">
+                                <a href=""><p>One Star Sunbaked</p></a>
+                                <p><b>1.650.000 đ</b></p>
+                            </div>
+                            <!-- Hết cột phải -->
+                        </div>
+                        <!-- Hết row -->
+                        <div class="row rowsanpham">
+                            <div class="col-md-4 cottraisanpham">
+                                <a href=""><img src="images/nu4.jpg" alt=""></a>
+                            </div>
+                            <!-- Hết cột trái -->
+                            <div class="col-md-8 cotphaisanpham">
+                                <a href=""><p>Chuck 70 Archive Prints Hi</p></a>
+                                <p><b>1.800.000 đ</b></p>
+                            </div>
+                            <!-- Hết cột phải -->
+                        </div>
+                        <!-- Hết row -->
+                        <div class="row rowsanpham">
+                            <div class="col-md-4 cottraisanpham">
+                                <a href=""><img src="images/nu5.jpg" alt=""></a>
+                            </div>
+                            <!-- Hết cột trái -->
+                            <div class="col-md-8 cotphaisanpham">
+                                <a href=""><p>Chuck 70 Psy- Kicks Ox</p></a>
+                                <p><b>1.800.000 đ</b></p>
+                            </div>
+                            <!-- Hết cột phải -->
+                        </div>
+                        <!-- Hết row -->
+                    </div>
+                    <!-- Hết container sản phẩm -->
+
+                </div>
+                <!-- Hết duoitrai -->
+                <div class="col-md-9 duoiphai">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-6 cotduoiphai text-center">
+                                <div class="card1">
+                                    <a href=""><img class="anhtruoc" src="images/treem1.jpg" alt=""></a>
+                                    <div class="text">
+                                        <a href=""><p>One Star Sunbaked</p></a>
+                                        <p><b>1.650.000đ</b> </p>
+                                        <a href=""><button type="button" class="btn btn-outline-danger">Xem Sản Phẩm</button></a>
+                                    </div>
+                                    <div class=""><img class="anhsau" src="images/treem11.jpg" alt=""></div>
+                                </div>
+                                <!-- Hết card --> 
+                            </div>
+                            <!-- Hết một cotduoiphai -->
+                            <div class="col-md-3 col-6 cotduoiphai text-center">
+                                <div class="card1">
+                                    <a href=""><img class="anhtruoc" src="images/treem2.jpg" alt=""></a>
+                                    <div class="text">
+                                        <a href=""><p>One Star Sunbaked</p></a>
+                                        <p><b>1.650.000đ</b> </p>
+                                        <a href=""><button type="button" class="btn btn-outline-danger">Xem Sản Phẩm</button></a>
+                                    </div>
+                                    <div class=""><img class="anhsau" src="images/treem21.jpg" alt=""></div>
+                                </div>
+                                <!-- Hết card --> 
+                            </div>
+                            <!-- Hết một cotduoiphai -->
+                            <div class="col-md-3 col-6 cotduoiphai text-center">
+                                <div class="card1">
+                                    <a href=""><img class="anhtruoc" src="images/treem3.jpg" alt=""></a>
+                                    <div class="text">
+                                        <a href=""><p>One Star Sunbaked</p></a>
+                                        <p><b>1.650.000đ</b> </p>
+                                        <a href=""><button type="button" class="btn btn-outline-danger">Xem Sản Phẩm</button></a>
+                                    </div>
+                                    <div class=""><img class="anhsau" src="images/treem31.jpg" alt=""></div>
+                                </div>
+                                <!-- Hết card --> 
+                            </div>
+                            <!-- Hết một cotduoiphai -->
+                            <div class="col-md-3 col-6 cotduoiphai text-center">
+                                <div class="card1">
+                                    <a href=""><img class="anhtruoc" src="images/treem4.jpg" alt=""></a>
+                                    <div class="text">
+                                        <a href=""><p>Chuck 70 Archive Prints Hi</p></a>
+                                        <p><b>1.800.000đ</b> </p>
+                                        <a href=""><button type="button" class="btn btn-outline-danger">Xem Sản Phẩm</button></a>
+                                    </div>
+                                    <div class=""><img class="anhsau" src="images/treem41.jpg" alt=""></div>
+                                </div>
+                                <!-- Hết card --> 
+                            </div>
+                            <!-- Hết một cotduoiphai -->
+                            <div class="col-md-3 col-6 cotduoiphai text-center">
+                                <div class="card1">
+                                    <a href=""><img class="anhtruoc" src="images/treem5.jpg" alt=""></a>
+                                    <div class="text">
+                                        <a href=""><p>Chuck 70 Psy-Kicks Ox</p></a>
+                                        <p><b>1.800.000đ</b> </p>
+                                        <a href=""><button type="button" class="btn btn-outline-danger">Xem Sản Phẩm</button></a>
+                                    </div>
+                                    <div class=""><img class="anhsau" src="images/treem51.jpg" alt=""></div>
+                                </div>
+                                <!-- Hết card --> 
+                            </div>
+                            <!-- Hết một cotduoiphai -->
+                            <div class="col-md-3 col-6 cotduoiphai text-center">
+                                <div class="card1">
+                                    <a href=""><img class="anhtruoc" src="images/treem6.jpg" alt=""></a>
+                                    <div class="text">
+                                        <a href=""><p>Chuck 70 Psy-Kicks Ox</p></a>
+                                        <p><b>1.800.000đ</b> </p>
+                                        <a href=""><button type="button" class="btn btn-outline-danger">Xem Sản Phẩm</button></a>
+                                    </div>
+                                    <div class=""><img class="anhsau" src="images/treem61.jpg" alt=""></div>
+                                </div>
+                                <!-- Hết card --> 
+                            </div>
+                            <!-- Hết một cotduoiphai -->
+                            
+                            
+                        </div>
+                        <!-- Hết row -->
+                        <div class="row">
+                            <nav aria-label="Page navigation example">
+                              <ul class="pagination justify-content-center">
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">Next</a>
+                                </li>
+                              </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Hết container -->
+                </div>
+                <!-- Hết duoiphai -->
+            </div>
+            <!-- Hết rowduoi -->
+        </div>
+        <!-- Hết container -->
+    </div>
+    <!-- Hết phanthanu -->
+
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row rowtren">
+                <div class="col-md-3">         
+                    <h1>GIỚI THIỆU</h1>
+                    <hr>
+                    <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh.</p>                  
+                </div>
+                <!-- het một cột -->
+                <div class="col-md-3">
+                    <h1>ĐỊA CHỈ</h1>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-2 col-1">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="col-md-10 col-10">
+                            <p>176 Trần Phú, Phường Trường An, Thành Phố Huế</p>
+                        </div>
+                    </div>
+                    <!-- het 1 row thong tin --> 
+                    <div class="row">
+                        <div class="col-md-2 col-1">
+                            <i class="bi bi-telephone-inbound"></i>
+                        </div>
+                        <div class="col-md-10 col-10">
+                            <p>0777.241.999</p>
+                        </div>
+                    </div>
+                    <!-- het 1 row thong tin --> 
+                    <div class="row">
+                        <div class="col-md-2 col-1">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="col-md-10 col-10">
+                            <p>tranvinhlam01@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- het 1 row thong tin --> 
+
+                </div>
+                <!-- het một cột -->
+                <div class="col-md-2 col-4">
+                    <h1>MENU</h1>
+                    <hr>
+                    <ul class="danhsach">
+                      <a href="TrangChu.html"><li class="">Trang Chủ</li></a>
+                      <a href="Nu.html"><li class="">Cửa Hàng</li></a>
+                      <a href="LienHe.html"><li class="">Liên Hệ</li></a>
+                      <a href="GioiThieu.html"><li class="">Giới Thiệu</li></a>
+                      <a href="TinTuc.html"><li class="">Tin Tức</li></a>
+                    </ul>
+                </div>
+                <!-- het một cột -->
+
+                <div class="col-md-3 col-8 offset-md-1 mangxahoi" >
+                    <h1>MẠNG XÃ HỘI</h1>
+                    <hr>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-envelope email"></i>
+                </div>
+                <!-- het một cột -->
+
+            </div>
+            <!-- het 1 row -->
+            <hr class="hrduoi">
+            <div class="row rowduoi">
+                <div class="col-md-3">
+                    <h1>ĐĂNG KÝ NHẬN THÔNG TIN</h1>
+                </div>
+                <!-- hết một cột -->
+                <div class="col-md-5">
+                    <form class="d-flex">
+                        <input class="form-control" type="search" placeholder="Email..." aria-label="Search">
+                        <button class="btn btn-danger" type="submit"> Đăng ký </button>
+                    </form>
+                </div>
+                <!-- hết một cột -->
+                <div class="col-md-4">
+                    <img src="images/footer1.png" alt="">
+                    <img src="images/footer2.png" alt="">
+                    <img src="images/footer3.png" alt="">
+                    <img src="images/footer4.png" alt="">
+                    <img src="images/footer5.png" alt="">
+                    
+                </div>
+                <!-- hết một cột -->
+            </div>
+            <!-- Hết rowduoi -->
+        </div>
+        <!-- Hết container -->
+        <div class="container-pluid copyright text-center">
+            <h6>© Bản Quyền Thuộc Về: Trần Vĩnh Lãm</h6>
+        </div>
+    </div>
+    <!-- het footer -->
+    <div class="fixed-bottom">
+        <a href="" class="btn btn-danger nutlen float-end">
+            <i class="bi bi-chevron-double-up"></i>
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

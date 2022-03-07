@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/TrangChu.css">
+    <link rel="stylesheet" href="CSS/Nam.css">
+    <title>Nam</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="container">
+                      <a class="navbar-brand" href="#"><img class="logo" src="images/logoheader.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                       </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <div class="container ">
+                              <div class="row ">
+                                  <div class="col-md-12 ">
+                                      <ul class="navbar-nav menuheader">
+                                          <li class="nav-item">
+                                          <a class="nav-link" aria-current="page" href="index.html">TRANG CHỦ</a>
+                                          </li>
+                                          <li class="nav-item">
+                                          <a class="nav-link " href="GioiThieu.html">GIỚI THIỆU</a>
+                                          </li>
+                                          <li class="nav-item dropdown">
+                                          <a class="nav-link  active" href="SanPham.html" >
+                                              SẢN PHẨM
+                                          </a>
+                                          <ul class="dropdown-menu dropdown-content" >
+                                              <li><a class="dropdown-item" href="Nam.html">NAM</a></li>
+                                              <li><a class="dropdown-item" href="Nu.html">NỮ</a></li>
+                                              <li><a class="dropdown-item" href="TreEm.html">TRẺ EM</a></li>
+                                          </ul>
+                                          </li>
+                                          <li class="nav-item ">
+                                          <a class="nav-link" href="PhuKienKhac.html">
+                                              PHỤ KIỆN KHÁC
+                                          </a>
+                                              
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" href="TinTuc.html"> TIN TỨC</a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link " href="LienHe.html" >LIÊN HỆ</a>
+                                          </li>
+  
+                                          <li class="nav-item dangnhap">
+                                              <!-- Button trigger modal -->
+                                              <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                  Đăng Nhập/ Đăng Ký
+                                                </a>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                                                    <div class="modal-content">
+                                                      <div class="modal-body">
+                                                          <div class="container">
+                                                              <div class="row">
+                                                                  <div class="col-md-6 col-6">
+                                                                      <h2>ĐĂNG NHẬP</h2>
+                                                                      <p class="mt-3 mb-0">Tên tài khoản hoặc địa chỉ email *</p>
+                                                                      <input type="text" name="text" id="text" class="w-100">
+                                                                      <p class="mt-3 mb-0">Mật khẩu *</p>
+                                                                      <input type="password" name="text" id="text" class="w-100">
+                                                                      <div class="mt-3">
+                                                                          <button type="button" class="btn btn-danger">ĐĂNG NHẬP</button>
+                                                                          <input type="checkbox" name="" id="">
+                                                                          <small>Ghi nhớ mật khẩu</small>
+                                                                      </div>
+                                                                      <a href="LienHe.html">Quên Mật Khẩu?</a>
+                                                                  </div>
+                                                                  <!-- Hết một cột -->
+                                                                  <div class="col-md-6 col-6">
+                                                                      <h2>ĐĂNG KÝ</h2>
+                                                                      <p class="mt-3 mb-0">Email *</p>
+                                                                      <input type="text" name="text" id="text" class="w-100">
+                                                                      <p class="mt-3 mb-0">Mật khẩu *</p>
+                                                                      <input type="password" name="text" id="text" class="w-100">
+                                                                      <div class="mt-3">
+                                                                          <button type="button" class="btn btn-danger">ĐĂNG KÝ</button>
+                                                                      </div>
+                                                                  </div>
+                                                                  <!-- Hết một cột -->
+                                                              </div>
+                                                              <!-- hết row -->
+                                                          </div>
+                                                          <!-- Hết container -->
+                                                      </div>
+                                                      <!-- Hết modal--body -->
+  
+                                                      <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                      </div>
+                                                      <!-- Hết moddal-footer -->
+                                                    </div>
+                                                    <!-- Hết moddl-content -->
+                                                  </div>
+                                                </div>
+                                                <script type="text/javascript">
+                                                //modal auto load
+                                                  $(window).on('load', function() {
+                                                  //   $('#exampleModal').modal('show');
+                                                  });
+                                                </script>
+                                          </li>
+  
+                                          <li class="nav-item">
+                                              <a class="nav-link " href="GioHang.html" ><i class="bi bi-cart4"></i>GIỎ HÀNG</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      
+                      </div>
+         
+            </div>
+            <!-- end div container -->
+          </nav> 
+
+    </div> 
+    <!-- endheader -->
+    <div class="bannertren">
+        <img src="./images/banner/bannernam.webp" alt="" class="bannertren-img">
+    </div>
+
+    <div class="phanthannam">
+        <div class="container">
+            <div class="row rowtren">
+                <div class="col-md-2">
+                    <p><a href="TrangChu.html"> TRANG CHỦ / </a><b>NAM </b></p> 
+                </div>
+                <div class="col-md-3 offset-md-1 phanthannam__search">
+                        <input type="text" class="header__search-search-input seach__product" placeholder="Nhập để tìm kiếm ...">
+                        <a href="" class="header__search-search-icon-link">
+                            <i class="bi bi-search header__search-search-icon"></i>
+                        </a>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Giày</option>
+                      <option value="3">Áo </option>
+                      <option value="4">Quần</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Thứ tự mặc định</option>
+                      <option value="3">Mới nhất</option>
+                      <option value="4">Thứ tự theo giá: Thấp đến cao</option>
+                      <option value="5">Thứ tự theo giá: Cao đến thấp</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Hết rowtren -->
+            <div class="row rowduoi " >
+                <div class="container phukienkhac__container">
+                    <div class="row">
+                        <div class="text-center">
+                            <a href="MotSanPham.html" class="btn btn-dark">Sản Phẩm Nam</a>
+                        </div>
+                        <hr>
+                    </div>
+                    <!-- het 1 row -->
+                    <div class="row row-phukien ">
+                        <div class="col-6 col-md-3 col-phukien giay">
+                            <div class="sanpham">
+                                <div class="sampham__img">
+                                    <a href="MotSanPham.html">
+                                        <img src="./images/phukienkhac/pkk1-2.webp" alt="" class="sanpham-img sanpham-img-old">
+                                        <img src="./images/phukienkhac/pkk1-1.jpg" alt="" class="sanpham-img sanpham-img-new">
+                                    </a>
+                                    <div class="sanpham__hover text-center">
+                                        <a href="GioHang.html" class="sanpham__hover-muangay">
+                                            MUA NGAY 
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a href="GioHang.html">
+                                        <a href="" class="sanpham__hover-themvaogio">
+                                            THÊM VÀO GIỎ
+                                        </a href="">
+                                    </div>
+                                </div>
+                                <div class="sanpham__body">
+                                    <div class="sanpham__body-heading">
+                                        <a href="" class="sanphan__body-heading--link tengiay">
+                                            Giày thể thao nam chính hãng Adidas 20-20FX (Blue) - EH0265
+                                        </a>
+                                    </div>
+                                    <div class="sanpham__body-rate">
+                                        <span class="sanpham__body-rate-star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </span>
+                                        <span class="sanpham__body-rate-evaluate">
+                                            1 đánh giá
+                                        </span>
+                                    </div>
+                                    <div class="sanpham__body-rice text-center">
+                                        <span class="sanpham__body-rice-old"><del>1,200,000đ</del> </span>
+                                        <span class="sanpham__body-rice-new">1,050,000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- het mot cot -->
+                        
+                        <div class="col-6 col-md-3 col-phukien giay">
+                            <div class="sanpham">
+                                <div class="sampham__img">
+                                    <a href="MotSanPham.html">
+                                        <img src="./images/phukienkhac/pkk2-2.webp" alt="" class="sanpham-img sanpham-img-old">
+                                        <img src="./images/phukienkhac/pkk2-1.jpg" alt="" class="sanpham-img sanpham-img-new">
+                                    </a>
+                                    <div class="sanpham__hover text-center">
+                                        <a href="GioHang.html" class="sanpham__hover-muangay tengiay">
+                                            MUA NGAY 
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a href="GioHang.html">
+                                        <a href="" class="sanpham__hover-themvaogio">
+                                            THÊM VÀO GIỎ
+                                        </a href="">
+                                    </div>
+                                </div>
+                                <div class="sanpham__body">
+                                    <div class="sanpham__body-heading">
+                                        <a href="" class="sanphan__body-heading--link">
+                                            Giày thể thao nam chính hãng Adidas 20-20FX (Red) - EH0266
+                                        </a>
+                                    </div>
+                                    <div class="sanpham__body-rate">
+                                        <span class="sanpham__body-rate-star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </span>
+                                        <span class="sanpham__body-rate-evaluate">
+                                            1 đánh giá
+                                        </span>
+                                    </div>
+                                    <div class="sanpham__body-rice text-center">
+                                        <span class="sanpham__body-rice-old"><del>2,100,000đ</del> </span>
+                                        <span class="sanpham__body-rice-new">1,050,000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- het mot cot -->
+                        
+                        <div class="col-6 col-md-3 col-phukien">
+                            <div class="sanpham">
+                                <div class="sampham__img">
+                                    <a href="MotSanPham.html">
+                                        <img src="./images/phukienkhac/pkk3-2.webp" alt="" class="sanpham-img sanpham-img-old">
+                                        <img src="./images/phukienkhac/pkk3-1.jpg" alt="" class="sanpham-img sanpham-img-new">
+                                    </a>
+                                    <div class="sanpham__hover text-center">
+                                        <a href="GioHang.html" class="sanpham__hover-muangay">
+                                            MUA NGAY 
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a href="GioHang.html">
+                                        <a href="" class="sanpham__hover-themvaogio">
+                                            THÊM VÀO GIỎ
+                                        </a href="">
+                                    </div>
+                                </div>
+                                <div class="sanpham__body">
+                                    <div class="sanpham__body-heading">
+                                        <a href="" class="sanphan__body-heading--link">
+                                            Giày thể thao Adidas chính hãng SC Premiere W - EE6043
+                                        </a>
+                                    </div>
+                                    <div class="sanpham__body-rate">
+                                        <span class="sanpham__body-rate-star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </span>
+                                        <span class="sanpham__body-rate-evaluate">
+                                            1 đánh giá
+                                        </span>
+                                    </div>
+                                    <div class="sanpham__body-rice text-center">
+                                        <span class="sanpham__body-rice-old"><del>3,000,000đ</del> </span>
+                                        <span class="sanpham__body-rice-new">1,500,000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- het mot cot -->
+                        
+                        <div class="col-6 col-md-3 col-phukien">
+                            <div class="sanpham">
+                                <div class="sampham__img">
+                                    <a href="MotSanPham.html">
+                                        <img src="./images/phukienkhac/pkk4-2.webp" alt="" class="sanpham-img sanpham-img-old">
+                                        <img src="./images/phukienkhac/pkk4-1.jpg" alt="" class="sanpham-img sanpham-img-new">
+                                    </a>
+                                    <div class="sanpham__hover text-center">
+                                        <a href="GioHang.html" class="sanpham__hover-muangay">
+                                            MUA NGAY 
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a href="GioHang.html">
+                                        <a href="" class="sanpham__hover-themvaogio">
+                                            THÊM VÀO GIỎ
+                                        </a href="">
+                                    </div>
+                                </div>
+                                <div class="sanpham__body">
+                                    <div class="sanpham__body-heading">
+                                        <a href="" class="sanphan__body-heading--link">
+                                            Giày chạy bộ Adidas chính hãng Rivalry low W - FV3436
+                                        </a>
+                                    </div>
+                                    <div class="sanpham__body-rate">
+                                        <span class="sanpham__body-rate-star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </span>
+                                        <span class="sanpham__body-rate-evaluate">
+                                            3 đánh giá
+                                        </span>
+                                    </div>
+                                    <div class="sanpham__body-rice text-center">
+                                        <span class="sanpham__body-rice-old"><del>2,075,000đ</del> </span>
+                                        <span class="sanpham__body-rice-new">1,037,500đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- het mot cot -->
+                        
+                        <div class="col-6 col-md-3 col-phukien">
+                            <div class="sanpham">
+                                <div class="sampham__img">
+                                    <a href="MotSanPham.html">
+                                        <img src="./images/phukienkhac/pkk5-2.webp" alt="" class="sanpham-img sanpham-img-old">
+                                        <img src="./images/phukienkhac/pkk5-1.jpg" alt="" class="sanpham-img sanpham-img-new">
+                                    </a>
+                                    <div class="sanpham__hover text-center">
+                                        <a href="GioHang.html" class="sanpham__hover-muangay">
+                                            MUA NGAY 
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a href="GioHang.html">
+                                        <a href="" class="sanpham__hover-themvaogio">
+                                            THÊM VÀO GIỎ
+                                        </a href="">
+                                    </div>
+                                </div>
+                                <div class="sanpham__body">
+                                    <div class="sanpham__body-heading">
+                                        <a href="" class="sanphan__body-heading--link">
+                                            Giày thể thao nam chính hãng Adidas 20-20FX (Blue) - EH0265
+                                        </a>
+                                    </div>
+                                    <div class="sanpham__body-rate">
+                                        <span class="sanpham__body-rate-star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </span>
+                                        <span class="sanpham__body-rate-evaluate">
+                                            2 đánh giá
+                                        </span>
+                                    </div>
+                                    <div class="sanpham__body-rice text-center">
+                                        <span class="sanpham__body-rice-old"><del>1,200,000đ</del> </span>
+                                        <span class="sanpham__body-rice-new">1,050,000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- het mot cot -->
+                        
+                        <div class="col-6 col-md-3 col-phukien">
+                            <div class="sanpham">
+                                <div class="sampham__img">
+                                    <a href="MotSanPham.html">
+                                        <img src="./images/phukienkhac/pkk6-2.webp" alt="" class="sanpham-img sanpham-img-old">
+                                        <img src="./images/phukienkhac/pkk6-1.jpg" alt="" class="sanpham-img sanpham-img-new">
+                                    </a>
+                                    <div class="sanpham__hover text-center">
+                                        <a href="GioHang.html" class="sanpham__hover-muangay">
+                                            MUA NGAY 
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a href="GioHang.html">
+                                        <a href="" class="sanpham__hover-themvaogio">
+                                            THÊM VÀO GIỎ
+                                        </a href="">
+                                    </div>
+                                </div>
+                                <div class="sanpham__body">
+                                    <div class="sanpham__body-heading">
+                                        <a href="" class="sanphan__body-heading--link">
+                                            Giày chạy bộ Adidas chính hãng Questar Flow (Grey)
+                                        </a>
+                                    </div>
+                                    <div class="sanpham__body-rate">
+                                        <span class="sanpham__body-rate-star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </span>
+                                        <span class="sanpham__body-rate-evaluate">
+                                            3 đánh giá
+                                        </span>
+                                    </div>
+                                    <div class="sanpham__body-rice text-center">
+                                        <span class="sanpham__body-rice-old"><del>1,500,000đ</del> </span>
+                                        <span class="sanpham__body-rice-new">1,000,000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- het mot cot -->
+                        
+                        <div class="col-6 col-md-3 col-phukien">
+                            <div class="sanpham">
+                                <div class="sampham__img">
+                                    <a href="MotSanPham.html">
+                                        <img src="./images/phukienkhac/pkk7-2.webp" alt="" class="sanpham-img sanpham-img-old">
+                                        <img src="./images/phukienkhac/pkk7-1.jpg" alt="" class="sanpham-img sanpham-img-new">
+                                    </a>
+                                    <div class="sanpham__hover text-center">
+                                        <a href="GioHang.html" class="sanpham__hover-muangay">
+                                            MUA NGAY 
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a href="GioHang.html">
+                                        <a href="" class="sanpham__hover-themvaogio">
+                                            THÊM VÀO GIỎ
+                                        </a href="">
+                                    </div>
+                                </div>
+                                <div class="sanpham__body">
+                                    <div class="sanpham__body-heading">
+                                        <a href="" class="sanphan__body-heading--link">
+                                            Giày thể thao adidas chính hãng Lite Racer Adapt
+                                        </a>
+                                    </div>
+                                    <div class="sanpham__body-rate">
+                                        <span class="sanpham__body-rate-star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                        </span>
+                                        <span class="sanpham__body-rate-evaluate">
+                                            0 đánh giá
+                                        </span>
+                                    </div>
+                                    <div class="sanpham__body-rice text-center">
+                                        <span class="sanpham__body-rice-old"><del>2,300,000đ</del> </span>
+                                        <span class="sanpham__body-rice-new">1,150,000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- het mot cot -->
+                        
+                        <div class="col-6 col-md-3 col-phukien">
+                            <div class="sanpham">
+                                <div class="sampham__img">
+                                    <a href="MotSanPham.html">
+                                        <img src="./images/phukienkhac/pkk8-2.webp" alt="" class="sanpham-img sanpham-img-old">
+                                        <img src="./images/phukienkhac/pkk8-1.jpg" alt="" class="sanpham-img sanpham-img-new">
+                                    </a>
+                                    <div class="sanpham__hover text-center">
+                                        <a href="GioHang.html" class="sanpham__hover-muangay">
+                                            MUA NGAY 
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a href="GioHang.html">
+                                        <a href="" class="sanpham__hover-themvaogio">
+                                            THÊM VÀO GIỎ
+                                        </a href="">
+                                    </div>
+                                </div>
+                                <div class="sanpham__body">
+                                    <div class="sanpham__body-heading">
+                                        <a href="" class="sanphan__body-heading--link">
+                                            Mẫu giày chạy bộ Adidas chính hãng Energyfalcon (Blue/White/Glory Grey) FW2374
+                                        </a>
+                                    </div>
+                                    <div class="sanpham__body-rate">
+                                        <span class="sanpham__body-rate-star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </span>
+                                        <span class="sanpham__body-rate-evaluate">
+                                            3 đánh giá
+                                        </span>
+                                    </div>
+                                    <div class="sanpham__body-rice text-center">
+                                        <span class="sanpham__body-rice-old"><del>2,375,000đ</del> </span>
+                                        <span class="sanpham__body-rice-new">1,850,000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- het mot cot -->
+                        
+        
+                    </div>
+                    <!-- het 1 row -->
+        
+                    <div class="row chuyentrang ">
+                        <div class="text-center mt-2 row__chuyentrang ">
+
+                            <p class="row__chuyentrang-item">
+                                <a href="" class="row__chuyentrang-item-link">
+                                    <i class="bi bi-arrow-left"></i>
+                                </a>
+                            </p>
+                            <p class="row__chuyentrang-item">
+                                <a href="" class="row__chuyentrang-item-link">
+                                    1
+                                </a>
+                            </p>
+                            <p class="row__chuyentrang-item">
+                                <a href="" class="row__chuyentrang-item-link">
+                                    2
+                                </a>
+                            </p>
+                            <p class="row__chuyentrang-item">
+                                <a href="" class="row__chuyentrang-item-link">
+                                    3
+                                </a>
+                            </p>
+                            <p class="row__chuyentrang-item">
+                                <a href="" class="row__chuyentrang-item-link">
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Hết rowduoi -->
+        </div>
+        <!-- Hết container -->
+    </div>
+    <!-- Hết phanthanu -->
+
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row rowtren">
+                <div class="col-md-3">         
+                    <h1>GIỚI THIỆU</h1>
+                    <hr>
+                    <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh.</p>                  
+                </div>
+                <!-- het một cột -->
+                <div class="col-md-3">
+                    <h1>ĐỊA CHỈ</h1>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-2 col-1">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="col-md-10 col-10">
+                            <p>176 Trần Phú, Phường Trường An, Thành Phố Huế</p>
+                        </div>
+                    </div>
+                    <!-- het 1 row thong tin --> 
+                    <div class="row">
+                        <div class="col-md-2 col-1">
+                            <i class="bi bi-telephone-inbound"></i>
+                        </div>
+                        <div class="col-md-10 col-10">
+                            <p>0777.241.999</p>
+                        </div>
+                    </div>
+                    <!-- het 1 row thong tin --> 
+                    <div class="row">
+                        <div class="col-md-2 col-1">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="col-md-10 col-10">
+                            <p>tranvinhlam01@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- het 1 row thong tin --> 
+
+                </div>
+                <!-- het một cột -->
+                <div class="col-md-2 col-4">
+                    <h1>MENU</h1>
+                    <hr>
+                    <ul class="danhsach">
+                      <a href="TrangChu.html"><li class="">Trang Chủ</li></a>
+                      <a href="Nu.html"><li class="">Cửa Hàng</li></a>
+                      <a href="LienHe.html"><li class="">Liên Hệ</li></a>
+                      <a href="GioiThieu.html"><li class="">Giới Thiệu</li></a>
+                      <a href="TinTuc.html"><li class="">Tin Tức</li></a>
+                    </ul>
+                </div>
+                <!-- het một cột -->
+
+                <div class="col-md-3 col-8 offset-md-1 mangxahoi" >
+                    <h1>MẠNG XÃ HỘI</h1>
+                    <hr>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-envelope email"></i>
+                </div>
+                <!-- het một cột -->
+
+            </div>
+            <!-- het 1 row -->
+            <hr class="hrduoi">
+            <div class="row rowduoi">
+                <div class="col-md-3">
+                    <h1>ĐĂNG KÝ NHẬN THÔNG TIN</h1>
+                </div>
+                <!-- hết một cột -->
+                <div class="col-md-5">
+                    <form class="d-flex">
+                        <input class="form-control" type="search" placeholder="Email..." aria-label="Search">
+                        <button class="btn btn-danger" type="submit"> Đăng ký </button>
+                    </form>
+                </div>
+                <!-- hết một cột -->
+                <div class="col-md-4">
+                    <img src="images/footer1.png" alt="">
+                    <img src="images/footer2.png" alt="">
+                    <img src="images/footer3.png" alt="">
+                    <img src="images/footer4.png" alt="">
+                    <img src="images/footer5.png" alt="">
+                    
+                </div>
+                <!-- hết một cột -->
+            </div>
+            <!-- Hết rowduoi -->
+        </div>
+        <!-- Hết container -->
+        <div class="container-pluid copyright text-center">
+            <h6>© Bản Quyền Thuộc Về: Trần Vĩnh Lãm</h6>
+        </div>
+    </div>
+    <!-- het footer -->
+    <div class="fixed-bottom">
+        <a href="" class="btn btn-danger nutlen float-end">
+            <i class="bi bi-chevron-double-up"></i>
+        </a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>

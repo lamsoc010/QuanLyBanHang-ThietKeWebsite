@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+.phanthannu {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+/* Phần duoiphai */
+.duoitrai{
+    padding: 0;
+}
+.duoiphai .container{
+    padding: 0;
+}
+.cotduoiphai{
+    margin-bottom: 20px;
+}
+
+.card1 img{
+    width: 100%;
+    height: 120px;
+}
+.card1{
+    position: relative;
+    border: 1px solid rgb(236, 231, 231);
+    border-radius: 5px;
+    
+}
+img.anhsau{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.card1:hover img.anhsau{
+    display: none;
+}
+.card1:hover {
+    border-color: gray;
+    border-width: 2px;
+    font-weight: 500;
+}
+.card1 .text button.btn.btn-outline-danger {
+    margin-left: 6px;
+    margin-bottom: 20px;
+}
+
+.duoiphai .cotduoiphai a{
+    text-decoration: none;
+    color: black;
+}
+.text{
+    margin-top: 40px;
+}
+.phanthannu p { 
+    width:100%;
+    white-space: pre-wrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+  }
+/* Hết phần duoiphai */
+
+/* Phần rowtren */
+
+.phanthannu .rowtren p {
+   font-size: 18px;
+    padding: 7px 0;
+}
+
+.rowtren a{
+    text-decoration: none;
+    color: gray;
+}
+
+/* Hết phần rowtren */
+
+/* Phần rowduoi duoitrai */
+.sanpham{
+    padding: 0;
+    border: 1px solid rgb(233, 224, 224);
+    border-bottom: none;
+}
+.sanpham .cottraisanpham img{
+    width: 100%;
+    margin-left: 6px;
+}
+.cottraisanpham, .cotphaisanpham{
+    padding: 0;
+}
+.cotphaisanpham{
+    padding-left: 10px;
+}
+.cotphaisanpham a{
+    text-decoration: none;
+    color: black;
+}
+.rowsanpham{
+    border-bottom: 1px solid rgb(228, 217, 217);
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* Hết phần rowduoi duoitrai */
+@media  (max-width: 576px ) {
+    .duoitrai{
+        display: none;
+    }
+  }
+@media  (min-width: 576px ) and(max-width: 767px) {
+    .duoitrai{
+        display: none;
+    }
+  }

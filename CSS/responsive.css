@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+    .header ul.navbar-nav.menuheader {
+        margin-left: 0;
+    }
+
+    .menuheader li.nav-item {
+        width: 110px;
+        margin-left: 110px;
+    }
+
+    .bannertren .carousel-caption {
+        top: 0%;
+    }
+
+    .slide2 span.carousel-control-next-icon {
+        transform: none;
+    }
+    .slide2 span.carousel-control-prev-icon {
+        transform: none;
+    }
+}

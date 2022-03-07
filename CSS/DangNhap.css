@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.phanthan button.btn.btn-danger {
+    border-radius: 0;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    margin-top: 13px;
+}
+
+.phanthan p {
+    font-weight: 600;
+}
+
+.phanthan{
+    margin-top: 120px;
+    margin-bottom: 30px;
+}

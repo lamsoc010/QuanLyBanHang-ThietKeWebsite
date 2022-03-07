@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* phanthanam__search */
+.phanthannam__search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #ededed;
+}
+
+.seach__product {
+    background-color: white;
+}
+
+/* Hết phanthanam__search */
+
+/* chuyentrang */
+.phanthannam .rowtren a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.phanthannam .rowtren a:hover {
+    opacity: 0.8;
+}
+
+.phanthannam {
+    margin-top: 40px;
+}
+
+.row__chuyentrang {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.row__chuyentrang-item {
+   
+}
+
+.row__chuyentrang-item-link {
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+/* Hết chuyentrang */
+
+/* Hết phần rowduoi duoitrai */
+@media  (max-width: 576px ) {
+    .duoitrai{
+        display: none;
+    }
+  }
+@media  (min-width: 576px ) and(max-width: 767px) {
+    .duoitrai{
+        display: none;
+    }
+  }

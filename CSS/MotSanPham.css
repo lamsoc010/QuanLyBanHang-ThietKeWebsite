@@ -1,0 +1,166 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+/* phanthan */
+.phanthan{
+    margin-top:130px;
+}
+
+/* Phần cotphai row1 */
+
+.cotphai .row1 hr {
+    width: 10%;
+    margin-top: 17px;
+}
+
+.cotphai .row1 a {
+    text-decoration: none;
+    color: rgba(102,102,102,0.7);
+    font-size: 17px;
+    font-weight: 500;
+}
+.carousel-indicators li.nut{
+    text-indent: 0;
+    transform: translateY(150px);
+    opacity: 1;
+    height: 100px;
+    width: 150px;
+}
+.carousel-indicators .nut img{
+    width: 90px;
+    height: 100px;
+}
+
+/* Hết phần cotphai row1 */
+
+
+/* Phần cotphai row2 */
+.cotphai .row2 img{
+    width: 100%;
+    height: 50px;
+}
+
+
+/* Hết phần cotphai row2 */
+
+
+/* Hết phanthan */
+
+/* Phần cottrai */
+.cottrai span.carousel-control-next-icon{
+    background-color: #f71010;
+}
+.cottrai span.carousel-control-prev-icon{
+    background-color: #f71010;
+}
+.cottrai img{
+    width: 100%;
+    height: 350px;
+}
+
+/* Hết phần cottrai */
+
+/* Phần thông số kỹ thuật */
+.cotphaithongtinsanpham .row {
+    border-bottom: 1px solid grey;
+    margin-left: 1px;
+}
+
+
+.cottraithongtinsanpham .row {
+    border-bottom: 1px solid grey;
+    width: 102%;
+    padding-right: 29px;
+}
+.rowthongtinsanpham p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+
+
+
+/* Hết phần thông số kỹ thuật */
+
+/* Phần rowsanphamtuongtu */
+.rowsanphamtuongtu .slides img{
+    width: 100%;
+}
+.rowsanphamtuongtu hr{
+    color: black;
+    height: 3px;
+}
+.card1{
+    position: relative;
+    overflow: hidden;
+    border: none;
+    height: 350px;
+}
+.card1:before{
+    position: absolute;
+    content: "";
+    color: white;
+    width:80%;
+    height: 8%;
+    background-color: red;
+    border-radius: 20px;
+    top: 80%;
+    left: 100%;
+    z-index: 1;
+
+    transform-origin: center center 0;
+    transition: .2s;
+
+}
+.card1:hover:before{
+    top: 83%;
+    left: 10%;
+    
+}
+
+.card1 img{
+    width: 100%;
+    height: auto;
+}
+.card-text1{
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    top: 120%;
+    color: white;
+    left: 0;
+    z-index: 5;
+    transition: .2s;
+}
+.card1:hover .card-text1{
+    top: 84%;
+    
+} 
+.card1 .text p {
+    color: red;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px red;
+}
+
+.card1 .text h4 {
+    padding-top: 12px;
+}
+.card1 .card-text1 a{
+    text-decoration: none;
+    color: white;
+}
+.rowsanphamtuongtu span.carousel-control-prev-icon {
+    
+    background-color: #f71010;
+    transform: translateX(-70px);
+}
+.rowsanphamtuongtu span.carousel-control-next-icon {
+    
+    background-color: #f71010;
+    transform: translateX(70px);
+}
+/* Hết phần rowsanphamtuongtu */

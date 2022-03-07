@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cottrai i.bi {
+    font-size: 23px;
+}
+
+.cottrai p {
+    font-size: 21px;
+    font-weight: 500;
+}
+/* phanthan */
+.lienhe {
+    margin-top: 100px;
+}
+
+.duongdan__trangchu,
+.duongdan__lienhe {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.duongdan__trangchu {
+    color: black;
+}
+
+.container__lienhe {
+    padding: 0;
+}
+
+.lienhe__header {
+    height: 170px;
+    background-color: #f9f9f9;
+    margin-top: 30px;
+}
+
+.lienhe__header-heading {
+    text-align: center;
+    line-height: 170px;
+    font-size: 36px;
+}
+
+.lienhe__header-desc {
+    padding: 60px 0;
+}
+
+.lienhe__footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+}
+
+.lienhe__footer-left {
+    flex: 2;
+}
+
+.lienhe__footer-left-form {
+    padding: 60px;
+}
+
+.lienhe__footer-left-form-input {
+    padding: 10px 30px;
+    margin: 10px 0px;
+    width: 100%;
+    border-radius: 1px;
+}
+
+.lienhe__footer-left-form-submit {
+    padding: 12px 50px;
+    margin-top: 30px;
+    background-color: #1d8ed3;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+
+
+.lienhe__footer-left-form-submit:hover {
+    opacity: 0.8;
+}
+
+.lienhe__footer-right {
+    padding: 60px 30px;
+    flex: 1;
+    /* align-self: center; */
+}
+
+.lienhe__footer-right-contact-heading {
+    padding-bottom: 20px;
+}
+
+.lienhe__footer-right-contact-email {
+    padding-top: 10px;
+}
+
+/* .lienhe__footer-right-contact-email:hover ,
+.lienhe__footer-right-contact-phone:hover {
+    color: #1d8ed3;
+} */
+
+.lienhe__footer-right-contact-desc,
+.lienhe__footer-right-contact-phone-lienhe a{
+    color: rgb(97, 94, 94); 
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.lienhe__footer-contact-phone-icon {
+    margin-right: 10px;
+}
+
+/* Hết phanthan */

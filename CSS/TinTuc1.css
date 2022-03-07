@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.phanthannu {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+/* Phần duoiphai */
+.duoiphai{
+    padding-left: 30px;
+    border: 1px solid rgb(236, 233, 233);
+}
+.duoiphai hr{
+    width: 5%;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+.duoiphai:hover{
+    border: 2px groove rgb(177, 172, 172);
+}
+.duoiphai .container{
+    padding: 0;
+}
+.cotduoiphai{
+    margin-bottom: 20px;
+}
+.rowtrenduoiphai .col-md-2.col-2{
+    padding: 0 2px;
+    
+}
+.rowtrenduoiphai a{
+    width: 100%;
+    border-bottom: 2px solid rgb(41, 41, 41);
+}
+.rowtrenduoiphai .icon1 a{
+    background-color: #4769A5;
+}
+.rowtrenduoiphai .icon2 a{
+    background-color: #EA4335;
+}
+.rowtrenduoiphai .icon3 a{
+    background-color: #65CCEF;
+}
+.rowtrenduoiphai .icon4 a{
+    background-color:  #EA4335;
+}
+.rowtrenduoiphai .icon .bi{
+    color: white !important;
+}
+/* Hết phần duoiphai */
+
+/* Phần rowtren */
+
+.phanthannu .rowtren p {
+   font-size: 18px;
+    padding: 7px 0;
+}
+
+.rowtren a{
+    text-decoration: none;
+    color: gray;
+}
+
+/* Hết phần rowtren */
+
+/* Phần rowduoi duoitrai */
+.sanpham{
+    padding: 0;
+    border: 1px solid rgb(221, 214, 214);
+    border-bottom: none;
+    margin-top: 20px;
+}
+.sanpham .cottraisanpham img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.cottraisanpham, .cotphaisanpham{
+    padding: 0;
+}
+.cotphaisanpham{
+    padding-left: 10px;
+}
+.cotphaisanpham a{
+    text-decoration: none;
+    color: black;
+}
+.rowsanpham{
+    border-bottom: 1px groove rgb(233, 224, 224);
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.sanpham .rowsanpham img{
+    width: 100%;
+    height: 80px;
+}
+
+/* Hết phần rowduoi duoitrai */
+
+
+/* Phần rowduoiduoiphai */
+
+.rowduoiduoiphai{
+    background-color: rgb(243, 240, 240);
+}
+.rowduoiduoiphai .col-md-4{
+ padding: 0;
+}
+.rowduoiduoiphai .col-md-2.col-2 {
+    padding: 20px 0;
+}
+/* Hết phần rowduoiduoiphai */
+
+
+@media screen and (max-width: 576px) {
+    .duoitrai{
+        display: none;
+    }
+  }

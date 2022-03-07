@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="CSS/TrangChu.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <title>Converse</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+          <div class="container">
+                    <a class="navbar-brand" href="#"><img class="logo" src="images/logoheader.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                     </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="container ">
+                            <div class="row ">
+                                <div class="col-md-12 ">
+                                    <ul class="navbar-nav menuheader">
+                                        <li class="nav-item">
+                                        <a class="nav-link  active" aria-current="page" href="TrangChu.html">TRANG CHỦ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                        <a class="nav-link " href="GioiThieu.html">GIỚI THIỆU</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                        <a class="nav-link" href="SanPham.html" >
+                                            SẢN PHẨM
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-content" >
+                                            <li><a class="dropdown-item" href="Nam.html">NAM</a></li>
+                                            <li><a class="dropdown-item" href="Nu.html">NỮ</a></li>
+                                            <li><a class="dropdown-item" href="TreEm.html">TRẺ EM</a></li>
+                                        </ul>
+                                        </li>
+                                        <li class="nav-item ">
+                                        <a class="nav-link" href="PhuKienKhac.html">
+                                            PHỤ KIỆN KHÁC
+                                        </a>
+                                            
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="TinTuc.html"> TIN TỨC</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="LienHe.html" >LIÊN HỆ</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link " href="GioHang.html" ><i class="bi bi-cart4"></i>GIỎ HÀNG</a>
+                                        </li>
+
+                                        <li class="nav-item dangnhap">
+                                            <!-- Button trigger modal -->
+                                            <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Đăng Nhập/ Đăng Ký
+                                            </a>
+                                            <!-- Modal -->
+                                              
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                    <div class="modal-content">
+                                                        <div class="modal-contanier">
+                                                            <div class="modal-header">
+                                                                <h3 class="modal-header__heading">Đăng Ký</h3>
+                                                                <span class="modal-header__changer-btn" data-bs-target="#exampleModal1" data-bs-toggle="modal">Đăng Nhập</span>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="modal-body__groups">
+                                                                    <div class="modal-body__group">
+                                                                        <input type="text" class="modal-body__group-input" placeholder="Email của bạn">
+                                                                    </div>
+                                                                    <div class="modal-body__group">
+                                                                        <input type="password" class="modal-body__group-input" placeholder="Mật khẩu của bạn">
+                                                                    </div>
+                                                                    <div class="modal-body__group">
+                                                                        <input type="password" class="modal-body__group-input" placeholder="Nhập lại mật khẩu">
+                                                                    </div>
+                                                                </div>
+                                                
+                                                                <div class="modal-body__rules">
+                                                                    <p class="modal-body__rules-desc">
+                                                                        Bằng việc đăng ký, bạn đã đồng ý với chúng tôi về 
+                                                                        <a href="" class="modal-body__rules-link">Điều khoản dịch vụ </a> &
+                                                                        <a href="" class="modal-body__rules-link">Chính sách bảo mật </a> 
+                                                    
+                                                                    </p>
+                                                                </div>
+                                                
+                                                                <div class="modal-body__control">
+                                                                    <button class="modal-body-btn btn-hover">TRỞ LẠI</button>
+                                                                    <button class="modal-body-btn btn-red">ĐĂNG KÝ</button>
+                                                                </div>
+                                                            </div>
+                                                    
+                                                        </div>
+                                                        <!-- End modal-contanier -->
+                                                        <div class="modal-footer">
+                                                            <div class="modal-footer__socials">
+                                                                <a href="" class="modal-footer__socials-facebook btn--with-icon">
+                                                                    <i class="bi bi-facebook"></i>
+                                                                    Kết nối với Facebook
+                                                                </a>
+                                                                <a href="" class="modal-footer__socials-google btn--with-icon">
+                                                                    <i class="bi bi-google"></i>
+                                                                    Kết nối với Google
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                            
+                                                    </div>
+                                                    <!-- End modal-content -->
+                                            
+                                                </div>
+                                        
+                                            </div>
+
+                                            <script type="text/javascript">
+                                            //modal auto load
+                                            $(window).on('load', function() {
+                                            //   $('#exampleModal').modal('show');
+                                            });
+                                            </script>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+       
+          </div>
+          <!-- end div container -->
+        </nav> 
+
+    </div> 
+    <!-- endheader -->
+    <div class="bannertren">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active slide1">
+              <img src="images/banner1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h1>MONA SNE<i class="bi bi-star"></i>KER</h1>
+                            </div>
+                            <div class="col-md-4 offset-md-3">
+                                <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh. </p>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <!-- het carousel-caption -->
+
+            </div>
+            <!-- het 1 slide -->
+
+            <div class="carousel-item slide2">
+                <img src="images/banner2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                  <div class="container-fluid">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <h1>MONA SNE<i class="bi bi-star"></i>KER</h1>
+                              <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh. </p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item slide3">
+              <img src="images/banner3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption ">
+                <div class="row">
+                    <div class="col-md-5 offset-md-7">
+                        <h1>MONA SNE<i class="bi bi-star"></i>KER</h1>
+                        <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh. </p>
+                    </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- het inner -->
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- het carousel -->
+    </div>
+
+    <!-- hetbanner tren -->
+
+    <div class="banner2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 cot1">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-8 col-8 offset-2 offset-md-2">
+                                <img class="anh1" src="images/banner2.1.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <img src="images/giay1.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <a href="MotSanPham.html"><h3>Xem Sản Phẩm</h3></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-md-4 ">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-8 col-8 offset-2 offset-md-2">
+                                <img class="anh1" src="images/banner2.2.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <img src="images/giay2.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <a href="MotSanPham.html"><h3>Xem Sản Phẩm</h3></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-8 col-8 offset-2 offset-md-2">
+                                <img class="anh1" src="images/banner2.3.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <img src="images/giay3.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <a href="MotSanPham.html"><h3>Xem Sản Phẩm</h3></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+            </div> 
+
+        </div>
+
+    </div>
+    <!-- het banner 2 -->
+    
+    <div class="slide2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-5">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active btn btn-dark" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sản Phẩm Mới</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link btn btn-dark" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Sản Phẩm Phổ Biến</button>
+                        </li>
+                        
+                      </ul>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <!-- Bắt đầu tab -->
+                
+                
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+              
+                          <div class="carousel-item active">
+              
+                            <div class="container-fluid">
+                                <div class="row slides text-center">
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide1.jpg" alt="">
+                                        <div class="text">
+                                            <h4>One Star </h4>
+                                            <p>1.650.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide2.jpg" alt="">
+                                        <div class="text">
+                                            <h4>TWO Star Sunbaked</h4>
+                                            <p>2.150.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide3.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Conver 01 Star</h4>
+                                            <p>3.200.000</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide4.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Star Sunbaked</h4>
+                                            <p>1.250.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  
+                                </div>
+                            </div>
+              
+                          </div>
+                          <!-- het một item -->
+                          <div class="carousel-item">
+              
+                            <div class="container">
+                                <div class="row slides text-center">
+                                  <div class="col-6 col-md-3">
+                                      <div class="card1">
+                                        <img src="images/slide5.jpg" alt="">
+                                        <div class="text">
+                                            <h4>One Star</h4>
+                                            <p>1.650.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                     
+                                      
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide6.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Two Star Sunbaked</h4>
+                                            <p>1.800.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide7.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Conver Tall 01</h4>
+                                            <p>1.350.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide8.jpg" alt="">
+                                        <div class="text">
+                                            <h4>One Sunbaked</h4>
+                                            <p>1.450.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  
+                                </div>
+                            </div>
+              
+                          </div>
+                          <!-- het một item -->
+                          <div class="carousel-item ">
+              
+                            <div class="container">
+                                <div class="row slides text-center">
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide9.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Three Star Sunbaked</h4>
+                                            <p>1.250.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide10.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Conver Shoes VIP</h4>
+                                            <p>2.500.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide11.jpg" alt="">
+                                        <div class="text">
+                                            <h4>PP Shoes</h4>
+                                            <p>1.990.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide12.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Vip Converse</h4>
+                                            <p>3.250.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                    </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  
+                                </div>
+                            </div>
+              
+                          </div>
+                          <!-- het một item -->
+                          
+                        </div>
+                        <!-- het inner -->
+              
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"  data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"  data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <!-- het carousel -->
+                  </div>
+                  <!-- Hết tab1 -->
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div id="carouselExampleCaptions3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+              
+                          <div class="carousel-item active">
+              
+                            <div class="container-fluid">
+                                <div class="row slides text-center">
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide1.jpg" alt="">
+                                        <div class="text">
+                                            <h4>One Star </h4>
+                                            <p>1.650.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide2.jpg" alt="">
+                                        <div class="text">
+                                            <h4>TWO Star Sunbaked</h4>
+                                            <p>2.150.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide3.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Conver 01 Star</h4>
+                                            <p>3.200.000</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide4.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Star Sunbaked</h4>
+                                            <p>1.250.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  
+                                </div>
+                            </div>
+              
+                          </div>
+                          <!-- het một item -->
+                          <div class="carousel-item">
+              
+                            <div class="container">
+                                <div class="row slides text-center">
+                                  <div class="col-6 col-md-3">
+                                      <div class="card1">
+                                        <img src="images/slide5.jpg" alt="">
+                                        <div class="text">
+                                            <h4>One Star</h4>
+                                            <p>1.650.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                     
+                                      
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide6.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Two Star Sunbaked</h4>
+                                            <p>1.800.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide7.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Conver Tall 01</h4>
+                                            <p>1.350.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide8.jpg" alt="">
+                                        <div class="text">
+                                            <h4>One Sunbaked</h4>
+                                            <p>1.450.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  
+                                </div>
+                            </div>
+              
+                          </div>
+                          <!-- het một item -->
+                          <div class="carousel-item ">
+              
+                            <div class="container">
+                                <div class="row slides text-center">
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide9.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Three Star Sunbaked</h4>
+                                            <p>1.250.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide10.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Conver Shoes VIP</h4>
+                                            <p>2.500.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide11.jpg" alt="">
+                                        <div class="text">
+                                            <h4>PP Shoes</h4>
+                                            <p>1.990.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                      </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  <div class="col-6 col-md-3">
+                                    <div class="card1">
+                                        <img src="images/slide12.jpg" alt="">
+                                        <div class="text">
+                                            <h4>Vip Converse</h4>
+                                            <p>3.250.000đ</p>
+                                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                                        </div>
+                                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                                    </div>
+                                  </div>
+                                  <!-- het một cột -->
+                                  
+                                </div>
+                            </div>
+              
+                          </div>
+                          <!-- het một item -->
+                          
+                        </div>
+                        <!-- het inner -->
+              
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3"  data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3"  data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <!-- het carousel -->
+                  </div>
+                  <!-- Hết tab2 -->
+                  
+                </div>
+                <!-- Kết thúc tab -->
+                
+            </div>
+            <!-- het row -->
+        </div>
+        
+    </div>
+    <!-- het slide 2 -->
+
+    <div class="phukienkhac">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <a href="MotSanPham.html" class="btn btn-dark">Phụ Kiện Khác</a>
+                </div>
+                <hr>
+            </div>
+            <!-- het 1 row -->
+            <div class="row row-phukien">
+                <div class="col-6 col-md-3">
+                    <div class="card1">
+                        <img src="images/pkk1.jpg" alt="">
+                        <div class="text">
+                            <h4>Spandex Pants</h4>
+                            <p>900.000đ</p>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                    </div>
+                    
+                </div>
+                <!-- het mot cot -->
+                <div class="col-6 col-md-3">
+                    <div class="card1">
+                        <img src="images/pkk2.jpg" alt="">
+                        <div class="text">
+                            <h4>Jacket Black</h4>
+                            <p>1.250.000đ</p>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-6 col-md-3">
+                    <div class="card1">
+                        <img src="images/pkk3.jpg" alt="">
+                        <div class="text">
+                            <h4>Shirt</h4>
+                            <p>1.050.000đ</p>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-6 col-md-3">
+                    <div class="card1">
+                        <img src="images/pkk4.jpg" alt="">
+                        <div class="text">
+                            <h4>T-Shirt Black</h4>
+                            <p>850.000đ</p>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-6 col-md-3">
+                    <div class="card1">
+                        <img src="images/pkk5.jpg" alt="">
+                        <div class="text">
+                            <h4>Converse Balo Blue</h4>
+                            <p>1.850.000đ</p>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-6 col-md-3">
+                    <div class="card1">
+                        <img src="images/pkk6.jpg" alt="">
+                        <div class="text">
+                            <h4>Converse Balo Tall</h4>
+                            <p>1.550.000đ</p>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-6 col-md-3">
+                    <div class="card1">
+                        <img src="images/pkk7.jpg" alt="">
+                        <div class="text">
+                            <h4>Balo Converse Blue</h4>
+                            <p>1.250.000đ</p>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-6 col-md-3">
+                    <div class="card1">
+                        <img src="images/pkk8.jpg" alt="">
+                        <div class="text">
+                            <h4>Balo Converse Brow</h4>
+                            <p>1.150.000đ</p>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text1"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+
+            </div>
+            <!-- het 1 row -->
+            <div class="row">
+                <div class="col-md-2 offset-md-5">
+                    <a href="PhuKienKhac.html" class="btn btn-outline-dark"> Xem Tất Cả</a> 
+                </div>
+                
+            </div>
+        </div>
+        <!-- het container -->
+
+    </div>
+    <!-- het phukienkhac -->
+
+    <div class="khuyenmai">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>MONA SNE<i class="bi bi-star"></i>KER</h1>
+                    <h2>KHUYẾN MÃI GIẢM GIÁ 50%</h2>
+                    <a href="MotSanPham.html" class="btn btn-outline-dark"> Xem Khuyến Mãi</a>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- het khuyenmai -->
+
+    <div class="sanphamgiamgia">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+                    <a href="MotSanPham.html" class="btn btn-dark">Sản Phẩm Giảm Giá</a>
+                </div>
+                <hr>
+            </div>
+            <!-- het 1 row -->
+            <div class="row row-phukien">
+                <div class="col-md-3 col-6">
+                    <div class="card2">
+                        <img src="images/spgg1.jpg" alt="">
+                        <div class="text">
+                            <h4>Converse Black</h4>
+                            <small style="color:rgb(226, 88, 88) ;"><del>1.500.000đ </del> </small> <small style="color: red;"> <b>1.050.000đ</b> </small>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text2"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                        <div class="giamgia">
+                            <p>-30%</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- het mot cot -->
+                <div class="col-md-3 col-6">
+                    <div class="card2">
+                        <img src="images/spgg2.jpg" alt="">
+                        <div class="text">
+                            <h4>Converse Red Star</h4>
+                            <small style="color:rgb(226, 88, 88) ;"><del>1.800.000đ </del> </small> <small style="color: red;"> <b>1.350.000đ</b> </small>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text2"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                        <div class="giamgia">
+                            <p>-30%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-md-3 col-6">
+                    <div class="card2">
+                        <img src="images/spgg3.jpg" alt="">
+                        <div class="text">
+                            <h4>Jack Purcell Pro</h4>
+                            <small style="color:rgb(226, 88, 88) ;"><del>1.500.000đ </del> </small> <small style="color: red;"> <b>1.050.000đ</b> </small>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text2"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                        <div class="giamgia">
+                            <p>-30%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-md-3 col-6">
+                    <div class="card2">
+                        <img src="images/spgg4.jpg" alt="">
+                        <div class="text">
+                            <h4>Converse fastion Gray</h4>
+                            <small style="color:rgb(226, 88, 88) ;"><del>1.700.000đ </del> </small> <small style="color: red;"> <b>1.250.000đ</b> </small>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text2"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                        <div class="giamgia">
+                            <p>-30%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-md-3 col-6">
+                    <div class="card2">
+                        <img src="images/spgg5.jpg" alt="">
+                        <div class="text">
+                            <h4>Converse Gray</h4>
+                            <small style="color:rgb(226, 88, 88) ;"><del>1.500.000đ </del> </small> <small style="color: red;"> <b>1.050.000đ</b> </small>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text2"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                        <div class="giamgia">
+                            <p>-30%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-md-3 col-6">
+                    <div class="card2">
+                        <img src="images/spgg6.jpg" alt="">
+                        <div class="text">
+                            <h4>Converse Red Star</h4>
+                            <small style="color:rgb(226, 88, 88) ;"><del>1.800.000đ </del> </small> <small style="color: red;"> <b>1.350.000đ</b> </small>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text2"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                        <div class="giamgia">
+                            <p>-30%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-md-3 col-6">
+                    <div class="card2">
+                        <img src="images/spgg7.jpg" alt="">
+                        <div class="text">
+                            <h4>Converse Fastion Red Star</h4>
+                            <small style="color:rgb(226, 88, 88) ;"><del>2.000.000đ </del> </small> <small style="color: red;"> <b>1.550.000đ</b> </small>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text2"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                        <div class="giamgia">
+                            <p>-30%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+                <div class="col-md-3 col-6">
+                    <div class="card2">
+                        <img src="images/spgg8.jpg" alt="">
+                        <div class="text">
+                            <h4>Converse White Star</h4>
+                            <small style="color:rgb(226, 88, 88) ;"><del>1.800.000đ </del> </small> <small style="color: red;"> <b>1.350.000đ</b> </small>
+                            <a href="MotSanPham.html" type="button" class="btn btn-outline-danger">Xem sản phấm</a>
+                        </div>
+                        <div class="card-text2"><a href=""><h6>Thêm Vào Giỏ</h6></a></div>
+                        <div class="giamgia">
+                            <p>-30%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- het mot cot -->
+
+            </div>
+            <!-- het 1 row -->
+            <div class="row">
+                <div class="col-md-2 offset-md-5">
+                    <a href="SanPham.html" class="btn btn-outline-dark"> Xem Tất Cả</a> 
+                </div>
+                
+            </div>
+        </div>
+        <!-- het container -->
+
+    </div>
+    <!-- het phukienkhac -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row rowtren">
+                <div class="col-md-3">         
+                    <h1>GIỚI THIỆU</h1>
+                    <hr>
+                    <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh.</p>                  
+                </div>
+                <!-- het một cột -->
+                <div class="col-md-3">
+                    <h1>ĐỊA CHỈ</h1>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-2 col-1">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="col-md-10 col-10">
+                            <p>176 Trần Phú, Phường Trường An, Thành Phố Huế</p>
+                        </div>
+                    </div>
+                    <!-- het 1 row thong tin --> 
+                    <div class="row">
+                        <div class="col-md-2 col-1">
+                            <i class="bi bi-telephone-inbound"></i>
+                        </div>
+                        <div class="col-md-10 col-10">
+                            <p>0777.241.999</p>
+                        </div>
+                    </div>
+                    <!-- het 1 row thong tin --> 
+                    <div class="row">
+                        <div class="col-md-2 col-1">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="col-md-10 col-10">
+                            <p>tranvinhlam01@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- het 1 row thong tin --> 
+
+                </div>
+                <!-- het một cột -->
+                <div class="col-md-2 col-4">
+                    <h1>MENU</h1>
+                    <hr>
+                    <ul class="danhsach">
+                      <a href="TrangChu.html"><li class="">Trang Chủ</li></a>
+                      <a href="Nu.html"><li class="">Cửa Hàng</li></a>
+                      <a href="LienHe.html"><li class="">Liên Hệ</li></a>
+                      <a href="GioiThieu.html"><li class="">Giới Thiệu</li></a>
+                      <a href="TinTuc.html"><li class="">Tin Tức</li></a>
+                    </ul>
+                </div>
+                <!-- het một cột -->
+
+                <div class="col-md-3 col-8 offset-md-1 mangxahoi" >
+                    <h1>MẠNG XÃ HỘI</h1>
+                    <hr>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-envelope email"></i>
+                </div>
+                <!-- het một cột -->
+
+            </div>
+            <!-- het 1 row -->
+            <hr class="hrduoi">
+            <div class="row rowduoi">
+                <div class="col-md-3">
+                    <h1>ĐĂNG KÝ NHẬN THÔNG TIN</h1>
+                </div>
+                <!-- hết một cột -->
+                <div class="col-md-5">
+                    <form class="d-flex">
+                        <input class="form-control" type="search" placeholder="Email..." aria-label="Search">
+                        <button class="btn btn-danger" type="submit"> Đăng ký </button>
+                    </form>
+                </div>
+                <!-- hết một cột -->
+                <div class="col-md-4">
+                    <img src="images/footer1.png" alt="">
+                    <img src="images/footer2.png" alt="">
+                    <img src="images/footer3.png" alt="">
+                    <img src="images/footer4.png" alt="">
+                    <img src="images/footer5.png" alt="">
+                    
+                </div>
+                <!-- hết một cột -->
+            </div>
+            <!-- Hết rowduoi -->
+        </div>
+        <!-- Hết container -->
+        <div class="container-pluid copyright text-center">
+            <h6>© Bản Quyền Thuộc Về: Trần Vĩnh Lãm</h6>
+        </div>
+    </div>
+    <!-- het footer -->
+
+    <div class="fixed-bottom">
+        <a href="" class="btn btn-danger nutlen float-end">
+            <i class="bi bi-chevron-double-up"></i>
+        </a>
+    </div>
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

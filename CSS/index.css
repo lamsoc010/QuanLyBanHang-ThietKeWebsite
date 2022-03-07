@@ -1,0 +1,403 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+/* Phần header-contact */
+.header__contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    align-items: center;
+}
+.header__contact-left {
+    display: flex;
+    /* align-content: center; */
+}
+
+.header__contact-left-left,
+.header__contact-left-right {
+    display: inline-block;
+}
+
+.header__contact-left-right {
+    margin-left: 20px;
+}
+
+.header__contact-left-left-icon {
+    font-size: 18px;
+}
+
+.header__contact-left-left-desc-link,
+.header__contact-right-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.duongke {
+    margin: 0 0 5px 0;
+}
+
+/* Hết phần header-contact */
+
+/* Phần header__search */
+.header__search {
+    display: flex;
+    
+    align-items: center;
+}
+
+.header__search-logo {
+    width: 162px;
+}
+
+.header__search-logo-img {
+    width: 100%;
+}
+
+.header__search-cart {
+    display: flex;
+    position: relative;
+}
+
+.header__search-border-icon {
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+.header__search-border-icon:hover,
+.header__search-cart-cart:hover .header__search-border-icon {
+    background-color: rgb(235, 229, 229);
+    border-color: black;
+}
+
+.header__search-cart-icon {
+    font-size: 24px;
+    /* line-height: 40px; */
+    color: rgb(167, 161, 161);
+}
+
+.header__search-cart-cart {
+    display: flex;
+    margin-left: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.header__search-card-cart-right {
+    margin-left: 14px;
+    
+}
+
+.header__search-search {
+    display: flex;
+    flex: 1;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 60px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding: 5px 20px;
+    background-color: #ededed;
+}
+
+.header__search-search-input {
+    border: none;
+    outline: none;
+    background-color: #ededed;
+}
+
+.header__search-search-icon {
+    color: black;
+    font-size: 24px;
+}
+
+.dangnhapthanhcong {
+    position: absolute;
+    top: 100%;
+    width: 50%;
+    padding: 10px 5px;
+    background-color:red;
+    z-index: 999;
+    text-decoration: none;
+}
+.dangnhapthanhcong__taikhoan,
+.dangnhapthanhcong__dangxuat {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+/* Hết phần header__search */
+
+
+/* phan header */
+
+.header {
+    position: relative;
+}
+.header .fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.header__nav {
+    padding: 5px 0;
+}
+
+.menuheader li.nav-item {
+    padding: 0px 0px;
+}
+
+.menuheader li.nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width .5s;
+}
+
+.menuheader li.nav-item:hover::after {
+    width: 100%;
+}
+
+.header .container{
+    padding: 0;
+}
+
+.header ul.navbar-nav.menuheader {
+    justify-content: space-evenly;
+}
+
+.header img.logo {
+    width: 150px;
+}
+
+a.nav-link.active {
+    border-bottom: 1px solid red;
+    
+}
+
+.header__nav .nav-link{
+    color: white !important;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    z-index: 999;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    z-index: 1000;
+}
+/* het phan header  */
+
+
+/* phanbanner tren */
+.bannertren{
+    width: 100%;
+    height: auto;
+}
+.bannertren img{
+    width: 100%;
+    height: 400px;
+}
+.slide1 .carousel-caption {
+    position: absolute;
+    top: 6%;
+    left: 10%;
+}
+
+.slide1 img.d-block.w-100 {
+    position: relative;
+}
+.carousel-caption h1 {
+    font-size: 47px;
+    text-shadow: 2px 2px 2px white;
+}
+.slide3 .carousel-caption {
+    position: absolute;
+    top: 23%;
+}
+
+.slide2 .carousel-caption {
+    position: absolute;
+    top: 22%;
+}
+
+.slide2 img.d-block.w-100 {
+    position: relative;
+}
+
+/* Phần banner tren ở mục con */
+
+
+.bannertren-img {
+    width: 100%;
+}
+
+/* het phan bannertren */
+
+/* phan footer */
+
+
+
+.footer p {
+    font-size: 14px;
+    color: #a4a4a4;
+}
+
+.footer hr {
+    width: 20%;
+    color: red;
+    height: 3px;
+}
+
+.footer .rowtren h1 {
+    font-size: 17px;
+    padding-top: 35px;
+    font-weight: 800;
+}
+
+.footer {
+    background-color: #252323;
+    color: white;
+}
+ul.danhsach a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #a4a4a4 ;
+
+}
+ul.danhsach{
+    padding: 0px;
+}
+ul.danhsach li:hover{
+    color: red;
+}
+.footer .hrduoi{
+    width: 100%;
+    color: white;
+}
+.mangxahoi i{
+    font-size: 38px;
+    padding: 0px 10px;
+}
+i.bi.bi-envelope.email {
+    color: red;
+}
+
+i.bi.bi-twitter {
+    color: #b3b3ff;
+}
+
+i.bi.bi-instagram {
+    color: #ff6b6b;
+}
+
+i.bi.bi-facebook {
+    color: #6a6afd;
+}
+.footer .rowduoi img {
+    width: 67px;
+}
+
+.footer .rowduoi h1 {
+    font-size: 19px;
+    font-weight: 700;
+}
+.footer .rowduoi button.btn.btn-danger {
+    width: 143px;
+    background-color:red;
+}
+.rowduoi{
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+.copyright h6 {
+    padding: 15px 0px;
+    margin:0px;
+}
+
+.container-pluid.copyright {
+    background-color: black;
+}
+.nutlen{
+    transition: 0.5s;
+    border-radius: 50% !important;
+    opacity: 0;
+}
+.nutlen.hienthi{
+    opacity: 1;
+}
+/* ádsadsa */
+.header__search--user {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    position: relative;
+    display: none;
+}
+
+.header__search--user:hover 
+.header__search-cart-cart-hover {
+    display: block;
+}
+
+.header__search-cart-cart-fullname {
+    margin-bottom: 0;
+    line-height: 50px;
+}
+.header__search-cart-cart-hover {
+    position: absolute;
+    top: 100%;
+    z-index: 999;
+    background-color: #212529;
+    width: 100%;
+    padding: 10px 0px 10px 20px;
+    display: none;
+    border-radius: 5px;
+}
+
+.header__search-cart-cart-hover-item-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+
+
+/* hết phần footer */
+@media screen and (max-width: 576px) {
+    *{
+        margin:0;
+        padding:0;
+    }
+    .menuheader li.nav-item {
+        width: 110px;
+        margin-left: 110px;
+    }
+  }

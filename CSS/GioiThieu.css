@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/* phanthan */
+
+.cottren p {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.phanthan .col-md-8 {
+    padding-left: 28px;
+}
+
+.phanthan {
+    margin-top:  60px;
+
+}
+.phanthan .col-md-4 img{
+    width: 100%;
+    height: auto;
+}
+.cottrai{
+    border-right: 5px double red;
+}
+
+/* hết phanthan */
+
+/* phanthanduoi */
+.cotduoitrai{
+    padding: 0;
+}
+.cotduoiphai{
+    padding: 0;
+    padding-left: 20px;
+}
+.motcot {
+    border-right: 1px solid rgb(224, 216, 216);
+    border-bottom: 1px solid rgb(236, 231, 231);
+
+}
+
+.motcot h5 {
+    font-size: 16px;
+}
+
+.cotduoiphai p.ghichu {
+    font-size: 12px;
+    font-weight: 800;
+    color: #bbbbbb;
+}
+
+.motcot p.chunho {
+    font-size: 13px;
+    /* padding-top: 0px; */
+    line-height: 2px;
+}
+
+.motcot .cotduoiphai i.bi.bi-check {
+    color: green;
+    font-size: 17px;
+    padding-right: 6px;
+    font-weight: 900;
+}
+
+.phanthanduoi {
+    margin-top: 41px;
+    margin-bottom: 40px
+}
+.cotduoiphai i {
+    font-size: 25px;
+}
+/* hết phanthanduoi */

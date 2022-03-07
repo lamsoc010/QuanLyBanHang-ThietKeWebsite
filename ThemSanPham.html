@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm Sản Phẩm</title>
+
+    <script src="./js/DanhSachDoiTuong.js"></script>
+    <script src="./js/hotro.js"></script>
+    <script src="./js/ThemSanPham.js"></script>
+    <script src="./js/GioHang.js"></script>
+    <script src="./js/validation.js"></script>
+    <style>
+        * {
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+        html {
+          color: #333;
+          font-size: 62.5%;
+          font-family: "Open Sans", sans-serif;
+        }
+
+        .main {
+          min-height: 100px;
+          display: flex;
+          justify-content: center;
+          height: 610px;
+        }
+
+        .form {
+          opacity: 0.9;
+          width: 50%;
+          min-height: 100px;
+          padding: 32px 24px;
+          text-align: center;
+          background: #fff;
+          border-radius: 2px;
+          margin: 24px;
+          align-self: center;
+          box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+        }
+        .form .heading {
+          font-size: 2rem;
+        }
+        .form .desc {
+          text-align: center;
+          color: #636d77;
+          font-size: 1.6rem;
+          font-weight: lighter;
+          line-height: 2.4rem;
+          margin-top: 16px;
+          font-weight: 300;
+        }
+
+        .form-group {
+          display: flex;
+          margin-bottom: 16px;
+          flex-direction: column;
+        }
+
+        .form-label,
+        .form-message {
+          text-align: left;
+        }
+
+        .form-label {
+          font-weight: 700;
+          padding-bottom: 6px;
+          line-height: 1.8rem;
+          font-size: 1.4rem;
+        }
+
+        .form-control {
+          height: 40px;
+          padding: 8px 12px;
+          border: 1px solid #b3b3b3;
+          border-radius: 3px;
+          outline: none;
+          font-size: 1.4rem;
+        }
+
+        .form-control:hover {
+          border-color: #1dbfaf;
+        }
+
+        .form-group.invalid .form-control {
+          border-color: #f33a58;
+        }
+
+        .form-group.invalid .form-message {
+          color: #f33a58;
+        }
+
+        .form-message {
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          padding: 4px 0 0;
+        }
+
+        .form-submit {
+          outline: none;
+          background-color: #1dbfaf;
+          margin-top: 12px;
+          padding: 12px 16px;
+          font-weight: 600;
+          color: #fff;
+          border: none;
+          width: 30%;
+          font-size: 14px;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+
+        .form-submit:hover {
+          background-color: #1ac7b6;
+        }
+
+        .spacer {
+          margin-top: 36px;
+        }
+
+        /* Bảng lưu trữ sản phẩm */
+        .luutrusanpham {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .bangluutru {
+            margin: auto;
+            border: 1px solid #ccc;
+            width: 80%;
+        }
+
+        tr,th,td {
+            border: 1px solid #ccc;
+
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #myInput {
+            width: 80%;
+            padding: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <form action="" method="POST" class="form" id="form-1">
+          <h3 class="heading">Thêm Sản Phẩm</h3>
+      
+          <div class="spacer"></div>
+      
+          <div class="form-group">
+            <label for="maSanPham" class="form-label">Mã Sản Phẩm</label>
+            <input id="maSanPham" name="maSanPham" type="text" placeholder="VD: GNam../GN" class="form-control">
+            <span class="form-message"></span>
+          </div>
+      
+          <div class="form-group">
+            <label for="hinhAnhTruoc" class="form-label">Hình Ảnh Trước</label>
+            <input id="hinhAnhTruoc" name="hinhAnhTruoc" type="text" placeholder="./image/giaynam/..." class="form-control">
+            <span class="form-message"></span>
+          </div>
+      
+          <div class="form-group">
+            <label for="hinhAnhSau" class="form-label">Hình Ảnh Sau</label>
+            <input id="hinhAnhSau" name="hinhAnhSau" type="hinhAnhSau" placeholder="./image/giaynam/..." class="form-control">
+            <span class="form-message"></span>
+          </div>
+      
+          <div class="form-group">
+            <label for="ten" class="form-label">Tên Sản Phẩm</label>
+            <input id="ten" name="ten" placeholder="Tên sản phẩm" type="text" class="form-control">
+            <span class="form-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="giaGoc" class="form-label">Giá Gốc Sản Phẩm</label>
+            <input id="giaGoc" name="giaGoc" placeholder="Giá gốc của sản phẩm" type="number" class="form-control">
+            <span class="form-message"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phanTramGiamGia" class="form-label">Phần Trăm Giảm Giá ( Từ 0 đến 1 )</label>
+            <input id="phanTramGiamGia" name="phanTramGiamGia" placeholder="Phần Trăm Giảm Giá( Từ 0 đến 1)" type="password" class="form-control">
+            <span class="form-message"></span>
+          </div>
+      
+          <button class="form-submit" id="form-submit-add" >Thêm Sản Phẩm</button>
+          <span id="form-submit-save"></span>
+        </form>
+    </div>
+
+
+    <div class="luutrusanpham">
+        <h3>Danh Sách Sản Phẩm</h3>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Nhập để tìm kiếm.." title="Type in a name">
+        <table class="bangluutru" id="bangluutru">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Mã Sản Phẩm</th>
+              <th scope="col">Hình Ảnh Trước</th>
+              <th scope="col">Hình Ảnh Sau</th>
+              <th scope="col">Tên</th>
+              <th scope="col">Giá Gốc</th>
+              <th scope="col">% Giảm Giá</th>
+              <th scope="col" colspan="2">Hành động</th>
+            </tr>
+          </thead>
+          <tbody id="phanthanluutru">
+
+          </tbody>
+          
+        </table>
+    </div>
+
+
+    <script>
+        // var danhSachSanPham = JSON.parse(localStorage.getItem('danhSachSanPham'));
+        // if(danhSachSanPham == null) {
+        //     danhSachSanPham = new Array();
+        // }
+        // console.log(danhSachSanPham)
+
+        Validator({
+              form: '#form-1',
+              errorSelector: '.form-message',
+              rules: [
+                  Validator.isRequired('#maSanPham', "Vui lòng nhập mã sản phẩm"),
+                  Validator.isRequired('#hinhAnhTruoc', "Vui lòng nhập đường dẫn hình ảnh"),
+                  Validator.isRequired('#hinhAnhSau', "Vui lòng nhập đường dẫn hình ảnh"),
+                  Validator.isRequired('#ten',"Vui lòng nhập tên sản phẩm"),
+                  Validator.isRequired('#giaGoc', "Vui lòng nhập giá sản phẩm"),
+                  Validator.isRequired('#phanTramGiamGia',"Vui lòng nhập phần trăm giảm giá"),
+              ],
+              onSubmit: function(data) {
+                var nutLuuLai = document.querySelector('#form-submit-save');
+                nutLuuLai.onSubmit = function(e) {
+                  e.preventDefault();
+                }
+                var nutThemSanPham = document.querySelector('#form-submit-add');
+                nutThemSanPham.onclick = ThemSanPham();
+                
+              }
+          })
+
+
+        // 1: Lấy danh sách sản phẩm từ localStorage
+        LayThongTinSanPhamDeHienThiVaoDanhSach();
+
+
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("bangluutru");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[3];
+                console.log(td);
+                if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+                }       
+            }
+        }
+    </script>
+
+</body>
+</html>
